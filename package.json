@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "postinstall": "prisma generate",
-    "dev": "prisma generate && next dev",
-    "build": "next build",
+    "postinstall": "yarn prisma generate",
+    "dev": "yarn prisma generate && next dev",
+    "build": "yarn prisma generate && next build",
     "start": "next start",
     "lint": "next lint"
   },
