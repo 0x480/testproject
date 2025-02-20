@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "postinstall": "yarn prisma generate && yarn prisma migrate dev",
-    "dev": "yarn prisma generate && next dev",
-    "build": "yarn prisma generate && next build",
-    "start": "next start",
+    "dev": "yarn prisma generate && yarn prisma migrate dev && next dev",
+    "build": "yarn prisma generate && yarn prisma migrate dev && next build",
+    "start": "yarn prisma generate && yarn prisma migrate dev && next start",
     "lint": "next lint"
   },
   "dependencies": {
